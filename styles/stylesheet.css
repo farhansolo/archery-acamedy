@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  margin: 0;
+  background: whitesmoke;
+}
+
+h1,h2,h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+/* Header and nav bar */
+header {
+  background: #03a3df;
+  padding: 15px 0;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+nav ul li {
+  list-style: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-right: solid 2px white;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+.header-flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-image: url("../images/footerImage.jpg");
+  background-size: 100% 100%;
+  color: white;
+  font-size: .8em;
+}
+
+.footer-flex-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 85%;
+  margin: auto;
+  padding: 2em 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-address p {
+  margin: .2em;
+}
+
+/* Main content */
+.content-flex-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+}
+
+.classes > div {
+  margin: 1.5em 0;
+}
+
+.section-title {
+  color: #1b447f;
+  text-align: center;
+}
+
+hr {
+  color: #1b447f;
+}
+
+.classes, .private-lessons {
+  margin-bottom: 2em;
+}
+
+/* Card Styling */
+.card {
+  background: #1b447f;
+  color: white;
+  min-height: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+}
+
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.class-name {
+  text-align: center;
+  margin: 0;
+  color: #ecb722;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.class-cost {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pre-req {
+  font-size: .8em;
+}
+
+.schedule {
+  color: #ecb722;
+  font-size: 1.2em;
+}
+
+/* Card Grid (flex for mobile)*/
+.cg-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.3em;
+}
+
+@media only screen and (min-width: 768px) {
+  .cg-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 70%;
+    padding-right: 1em;
+    padding-bottom: 1em;
+  }
+
+  .cg-item-1 {
+    grid-area: 1 / 1 / span 2 / span 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cg-item-2 {
+    grid-area: 1  / 2 / span 1 / span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cg-item-3 {
+    grid-area: 2  / 2 / span 1 / span 2;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+/* Private Lesson Grid */
+.plg-container {
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 768px) {
+  .plg-container {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+/* Private Lessons Flex Box Items*/
+.plg-item-1 {
+  display: flex;
+  min-height: 100%;
+  padding: 0 1.5px;
+}
+
+.plg-item-2 {
+  display: flex;
+  min-height: 100%;
+  padding: 0 1.5em;
+}
+
+.plg-item-3 {
+  display: flex;
+  min-height: 100%;
+  padding: 0 1.5em;
+}
+
+.lesson-number {
+  text-align: center;
+  font-size: 2.5em;
+  color: #ecb722;
+}
+
+.desc {
+  text-align: center;
+}
