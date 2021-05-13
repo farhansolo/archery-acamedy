@@ -253,3 +253,8 @@ section {
 hr .yellow {
   color:#ecb722;
 }
+
+video {
+  display: block;
+  margin: 0 auto;
+}
