@@ -4,60 +4,84 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   <title>About us</title>
 </head>
 <body>
   <header>
-    <a href="index.html">
-      <img src="images/archeryAcademy-logo-color.png" alt="Archery Academy Logo" height="100" width="250">
-    </a>
-    <nav>
-      <a href="#">about</a>
-    </nav>
+    <div class="header-flex-container">
+        <a href="index.html">
+          <img src="images/archeryAcademy-logo-white.png" alt="Archery Academy Logo" max-width="400px">
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
   </header>
-  <section>
-    <h1>About straight to the point archery</h1>
+  <div class="content-flex-container">
     <section>
-      <h2>Our Story</h2>
-      <p>Straight to the Point Archery is an indoor training facility with  28 shooting (14 -  10 yard lanes and 14 – 20 yard lanes) and 2 private coaching rooms. We also have access to 26  additional  20 yard lanes  and an outdoor shooting field.  We offer several types of lessons to accommodate everyone from the first time archer to the professional archer. Once set up with proper fitting equipment, each archer will be given the basic safety instruction to start and will be introduced to various shooting techniques.</p>
-      <p>From Beginner to Elite, archers of all ages and ability learn about this exciting Olympic and international sport. Sign up for a group lesson, private class, schedule a birthday or corporate party or compete at one of our many tournaments.  Straight to the Point Archery also offers homeschooling programs, kids club events, YMCA classes, Boy and Girl Scouts achievement programs and several other youth group activities. We are dedicated to teaching valuable life skills to the youth in our community through the wonderful discipline of archery.</p>
-      <p>Straight to the Point Archery’s staff has decades of experience in the archery industry. We are committed to educating you with any questions that you may have.</p>
-    </section>
-    <section>
-      <h3>Our Instructors</h3>
-      <article>
-        <img src="images/instructor-bio-image1.png" alt="Derek Jenkins bio picture" width="50" height="50">
-        <h4>Derek Jenkins</h4>
-        <p>Derek is a Washington native and an experienced outdoorsman with many years hunting, fishing, skiing, canoeing, archery, shooting and minimalistic camping. His skillful mastery of bushcraft and wilderness survival knowledge helps define his character. He enjoys handcrafting his own long bows, flint knapped primitive arrows and making custom leather products.</p>
-      </article>
-      <article>
-        <img src="images/instructor-bio-image2.png" alt="Amy Smith bio picture" width="50" height="50">
-        <h4>Amy Smith</h4>
-        <p>Amy truly has a passion for archery. She comes from a long line of hunters, fisherman, and trappers of Canada. Amy  places a strong emphasis on safety and is enthusiastic about teaching. Amy also loves fitness, and  has been a YMCA group exercise and personal trainer for over 18 years.</p>
-      </article>
-      <article>
-        <img src="images/instructor-bio-image3.png" alt="Nathan Lee bio picture" width="50" height="50">
-        <h4>Nathan Lee</h4>
-        <p>Nathan is an USA Archery Certified Level 3 NTS – Coach and has been teaching archery since 2009. He has been interested in archery since he nocked his first arrow while a Boy Scout at Scout camp. Nathan has many years of experience teaching people of all ages, experience gained as a Martial Arts Instructor and Studio Manager.</p>
-      </article>
-    </section>
-    <section>
-      <h3>Our Nondiscriminatory Policy</h3>
-      <p>Next Step Archery admits students of any race, gender presentation, sexuality, religion, national origin or ethnic origin to all rights, privileges, programs and activities available to students at the school. We do not discriminate in administration of our educational policies, admission policies and other school administered programs. All students are welcome and valuable members of our community.</p>
-    </section>
+      <h1 class="section-title">About Straight To The Point Archery</h1>
+      <hr>
+      <section>
+        <h2 class="section-title">Our Story</h2>
+        <div class="story">
+          <p>Straight to the Point Archery is an indoor training facility with  28 shooting (14 -  10 yard lanes and 14 – 20 yard lanes) and 2 private coaching rooms. We also have access to 26  additional  20 yard lanes  and an outdoor shooting field.  We offer several types of lessons to accommodate everyone from the first time archer to the professional archer. Once set up with proper fitting equipment, each archer will be given the basic safety instruction to start and will be introduced to various shooting techniques.</p>
+          <p>From Beginner to Elite, archers of all ages and ability learn about this exciting Olympic and international sport. Sign up for a group lesson, private class, schedule a birthday or corporate party or compete at one of our many tournaments.  Straight to the Point Archery also offers homeschooling programs, kids club events, YMCA classes, Boy and Girl Scouts achievement programs and several other youth group activities. We are dedicated to teaching valuable life skills to the youth in our community through the wonderful discipline of archery.</p>
+          <p>Straight to the Point Archery’s staff has decades of experience in the archery industry. We are committed to educating you with any questions that you may have.</p>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h2 class="section-title">Our Instructors</h2>
+        <div class="plg-container">
+          <article class="card plg-item-1">
+            <img src="images/instructor-bio-image1.png" alt="Derek Jenkins bio picture" max-width="100">
+            <h2>Derek Jenkins</h2>
+            <hr width="85%" class="yellow">
+            <p>Derek is a Washington native and an experienced outdoorsman with many years hunting, fishing, skiing, canoeing, archery, shooting and minimalistic camping. His skillful mastery of bushcraft and wilderness survival knowledge helps define his character. He enjoys handcrafting his own long bows, flint knapped primitive arrows and making custom leather products.</p>
+          </article>
+          <article class="card plg-item-2">
+            <img src="images/instructor-bio-image2.png" alt="Amy Smith bio picture" max-width="100">
+            <h2>Amy Smith</h2>
+            <hr width="85%" class="yellow">
+            <p>Amy truly has a passion for archery. She comes from a long line of hunters, fisherman, and trappers of Canada. Amy  places a strong emphasis on safety and is enthusiastic about teaching. Amy also loves fitness, and  has been a YMCA group exercise and personal trainer for over 18 years.</p>
+          </article>
+          <article class="card plg-item-3">
+            <img src="images/instructor-bio-image3.png" alt="Nathan Lee bio picture" max-width="100">
+            <h2>Nathan Lee</h2>
+            <hr width="85%" class="yellow">
+            <p>Nathan is an USA Archery Certified Level 3 NTS – Coach and has been teaching archery since 2009. He has been interested in archery since he nocked his first arrow while a Boy Scout at Scout camp. Nathan has many years of experience teaching people of all ages, experience gained as a Martial Arts Instructor and Studio Manager.</p>
+          </article>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h2 class="section-title">Nondiscriminatory Policy</h2>
+        <p class="story">Next Step Archery admits students of any race, gender presentation, sexuality, religion, national origin or ethnic origin to all rights, privileges, programs and activities available to students at the school. We do not discriminate in administration of our educational policies, admission policies and other school administered programs. All students are welcome and valuable members of our community.</p>
+      </section>
   </section>
+  </div>
   <footer>
-    <a href="index.html">
-      <img src="images/archeryAcademy-logo-white.png" alt="Archery Academy Logo" height="50" width="50">
-    </a>
-    <address>
-      <p>Straight to the Point Archery</p>
-      <p>528 Nock Point Ln</p>
-      <p>Tacoma, WA 98412</p>
-      <p>archery-education@example.com</p>
-      <p>(253)555-1010</p>
-    </address>
-    <p>© 2021 Archery Academy | Seattle, WA</p>
+    <div class="footer-flex-container">
+      <a href="#">
+        <img src="images/archeryAcademy-logo-white.png" alt="Archery Academy Logo" max-width="275">
+      </a>
+      <div class="footer-address">
+        <p>Straight to the Point Archery</p>
+        <p>528 Nock Point Ln</p>
+        <p>Tacoma, WA 98412</p>
+        <p>archery-education@example.com</p>
+        <p>(253) 555-1010</p>
+      </div>
+      <p>© 2021 Archery Academy | Seattle, WA</p>
+    </div>
   </footer>
 </body>
 </html>
