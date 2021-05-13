@@ -29,7 +29,7 @@ header {
 
 header nav a {
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.6em;
   color: white;
 }
 
@@ -51,11 +51,28 @@ nav ul li:last-child {
 
 .header-flex-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: space-between;
   width: 85%;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  header nav a {
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+  }
 }
 
 /* Footer */
