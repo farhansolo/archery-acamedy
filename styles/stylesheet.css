@@ -36,6 +36,7 @@ header nav a {
 nav ul {
   display: flex;
   flex-flow: row nowrap;
+  padding-left: 0;
 }
 
 nav ul li {
@@ -51,10 +52,10 @@ nav ul li:last-child {
 
 .header-flex-container {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: center;
-  justify-content: space-between;
-  width: 85%;
+  justify-content: center;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -64,13 +65,13 @@ nav ul li:last-child {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    width: 85%;
+    width: 65%;
     margin: 0 auto;
   }
 
   header nav a {
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.2em;
     color: white;
   }
 }
@@ -86,7 +87,7 @@ footer {
 .footer-flex-container {
   display: flex;
   flex-flow: column nowrap;
-  width: 85%;
+  width: 80%;
   margin: auto;
   padding: 2em 0;
   align-items: center;
@@ -102,9 +103,29 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  width: 85%;
+  width: 80%;
   margin: auto;
 }
+
+@media only screen and (min-width: 768px) {
+  .content-flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+  }
+
+  .footer-flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 70%;
+    margin: auto;
+    padding: 2em 0;
+    align-items: center;
+    justify-content: center;
+  }
+}  
 
 .classes > div {
   margin: 1.5em 0;
@@ -157,7 +178,7 @@ section {
 }
 
 .class-cost {
-  font-size: 1.3em;
+  font-size: 2em;
   font-weight: bold;
   text-align: center;
 }
@@ -177,12 +198,18 @@ section {
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-around;
-  padding: 1.3em;
+  padding: 1.5em;
 }
 
 @media only screen and (min-width: 768px) {
+  .class-cost {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+  }
   .cg-container {
     display: grid;
+    column-gap: 1.5em;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 30% 70%;
     padding-right: 1em;
@@ -227,8 +254,8 @@ section {
     display: grid;
     gap: 1.5em;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
-
 }
 
 /* Private Lessons Flex Box Items*/
@@ -255,7 +282,7 @@ section {
 
 .lesson-number {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3em;
   color: #ecb722;
 }
 
